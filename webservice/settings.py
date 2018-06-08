@@ -87,7 +87,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'strock$webservicedb',
         'USER': 'strock',
-        'PASSWORD': 'crizz',
+        'PASSWORD': 'cristian',
         'HOST': 'strock.mysql.pythonanywhere-services.com', # Or an IP Address that your DB is hosted on
         'PORT': '',
     }
