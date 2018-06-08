@@ -15,4 +15,8 @@ class User(models.Model):
 	sexo = models.CharField(max_length=50)
 	fecha_nac = models.DateField()
 	direccion = models.TextField()
-	carrera = models.ForeignKey(Carrera, verbose_name="diagnóstico Carrera")
+	carrera = models.ForeignKey(
+		Carrera,
+		 verbose_name="diagnóstico Carrera",
+		 on_delete=models.CASCADE
+		 )
