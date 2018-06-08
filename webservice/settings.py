@@ -85,7 +85,7 @@ REST_FRAMEWORK = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'webservicesdb',
+        'NAME': 'strock$webservicedb',
         'USER': 'strock',
         'PASSWORD': 'crizz',
         'HOST': 'strock.mysql.pythonanywhere-services.com', # Or an IP Address that your DB is hosted on

@@ -17,6 +17,5 @@ class User(models.Model):
 	direccion = models.TextField()
 	carrera = models.ForeignKey(
 		Carrera,
-		 verbose_name="diagnóstico Carrera",
 		 on_delete=models.CASCADE
 		 )
