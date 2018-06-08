@@ -86,9 +86,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'webservicesdb',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1', # Or an IP Address that your DB is hosted on
+        'USER': 'strock',
+        'PASSWORD': 'crizz',
+        'HOST': 'strock.mysql.pythonanywhere-services.com', # Or an IP Address that your DB is hosted on
         'PORT': '',
     }
 }
