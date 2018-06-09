@@ -7,7 +7,7 @@ from django.views.decorators.csrf import csrf_exempt
 from rest_framework.renderers import JSONRenderer
 from rest_framework.parsers import JSONParser
 from usuarios.models import User, Carrera
-from usuarios.serializers import UsuarioSerializer
+from usuarios.serializers import UsuarioSerializer, CarreraSerializer
 
 # Create your views here.
 #------------------------Usuarios----------------------------------
