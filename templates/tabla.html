@@ -1,17 +1,17 @@
-{% extends 'templates/base.html' %}
+{% extends 'base.html' %}
 
 {% block content %}
-
-<table>
- <thead>
-  <tr>
-   <th>Nombre</th>
-   <th>Apellido P.</th>
-   <th>Apellido M.</th>
-  </tr>
- </thead>
- <tbody>
-  {% for carrera in carreras %}
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellido P.</th>
+      <th scope="col">Apellido M.</th>
+      <th scope="col">Dirección</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for carrera in carreras %}
   <tr>
    <td>{{ carrera.nombre }}</td>
    <td>{{ carrera.apellido_pat }}</td>
@@ -20,7 +20,7 @@
   {% empty %}
   <tr><td colspan="4">No hay carreras registradas</td></tr>
   {% endfor %}
- </tbody>
+  </tbody>
 </table>
 
 {% endblock %}
