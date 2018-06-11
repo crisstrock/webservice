@@ -10,6 +10,8 @@ from usuarios.models import User, Carrera
 from usuarios.serializers import UsuarioSerializer, CarreraSerializer
 
 # Create your views here.
+def index():
+    return render('base.html')
 #------------------------Usuarios----------------------------------
 @csrf_exempt
 def usuario_list(request):
