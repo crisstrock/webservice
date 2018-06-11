@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
 from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.renderers import JSONRenderer
@@ -100,3 +100,7 @@ def carrera_detail(request, pk):
     elif request.method == 'DELETE':
         carrera.delete()
         return HttpResponse(status=204)
+
+def lista_carrera(request):
+    carreras = Carrera.objects.all()
+    return render_to_response('templates/tabla.html',{'carreras':carreras})
