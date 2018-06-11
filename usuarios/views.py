@@ -13,6 +13,11 @@ from usuarios.serializers import UsuarioSerializer, CarreraSerializer
 def index():
     return render('base.html')
 #------------------------Usuarios----------------------------------
+def lista_usuario(request):
+    users = User.objects.all()
+    return render_to_response('tabla_usuario.html',{'users'}:users)
+
+
 @csrf_exempt
 def usuario_list(request):
     """
