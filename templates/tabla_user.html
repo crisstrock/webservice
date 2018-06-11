@@ -11,12 +11,15 @@
     </tr>
   </thead>
   <tbody>
-    {% for carrera in carreras %}
+    {% for user in users %}
   <tr>
-   <td>{{ carrera.nombre }}</td>
+   <td>{{ user.nombre }}</td>
+   <td>{{ user.apellido_pat }}</td>
+   <td>{{ user.apellido_mat }}</td>
+   <td>{{ user.direccion }}</td>
   </tr>
   {% empty %}
-  <tr><td colspan="4">No hay carreras registradas</td></tr>
+  <tr><td colspan="4">No hay usuarios registradas</td></tr>
   {% endfor %}
   </tbody>
 </table>
