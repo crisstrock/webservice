@@ -103,4 +103,4 @@ def carrera_detail(request, pk):
 
 def lista_carrera(request):
     carreras = Carrera.objects.all()
-    return render_to_response('../templates/tabla.html',{'carreras':carreras})
+    return render_to_response('tabla.html',{'carreras':carreras})
